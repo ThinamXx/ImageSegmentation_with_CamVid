@@ -19,8 +19,9 @@ untar_data(URLs.CAMVID)
 ```
 
 **Image Segmentation with Fastai**
-* In digital image processing and computer vision, image segmentation is the process of partitioning a digital image into multiple segments. The goal of segmentation is to simplify and/or change the representation of an image into something that is more meaningful and easier to analyze.
-  * **Creating Segmentation ItemList**
+- In digital image processing and computer vision, image segmentation is the process of partitioning a digital image into multiple segments. The goal of segmentation is to simplify and/or change the representation of an image into something that is more meaningful and easier to analyze.
+
+- **Creating Segmentation ItemList**
 
 ```javascript
 (SegmentationItemList.from_folder(path_img)
@@ -28,12 +29,18 @@ untar_data(URLs.CAMVID)
       .label_from_func(get_y_fn, classes=codes))
 ```
 
-   * **Creating Data for Segmentation**
+- **Creating Data for Segmentation**
   
   ```javascript
   (src.transform(get_transforms(), size=size, tfm_y=True)
         .databunch(bs=bs)
         .normalize(imagenet_stats))
  ```
+
+**Creating Model with Fastai API**
+
+```javascript
+unet_learner(data, models.resnet34, metrics=metrics, wd=wd)
+```
  
  
