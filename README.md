@@ -28,7 +28,7 @@ untar_data(URLs.CAMVID)
       .label_from_func(get_y_fn, classes=codes))
 ```
 
-  * **Creating Data for Segmentation**
+   * **Creating Data for Segmentation**
   
   ```javascript
   (src.transform(get_transforms(), size=size, tfm_y=True)
