@@ -31,7 +31,7 @@ untar_data(URLs.CAMVID)
 
 - **Creating Data for Segmentation**
   
-  ```javascript
+ ```javascript
   (src.transform(get_transforms(), size=size, tfm_y=True)
         .databunch(bs=bs)
         .normalize(imagenet_stats))
@@ -42,5 +42,17 @@ untar_data(URLs.CAMVID)
 ```javascript
 unet_learner(data, models.resnet34, metrics=metrics, wd=wd)
 ```
- 
+
+**Image Segmentation**
+
+![Image](https://res.cloudinary.com/dge89aqpc/image/upload/v1596630592/Seg_spjwsr.png)
+
+**Accuracy of the Model**
+- Fastai API is so powerful and it gives good accuracy result. Snapshot of the Accuracy is shown below:
+
+![Image](https://res.cloudinary.com/dge89aqpc/image/upload/v1596630819/Acc_oyvfg4.png)
+
+**Snapshot of the Learning Rate**
+
+![Image](https://res.cloudinary.com/dge89aqpc/image/upload/v1596630918/Leaern_abn9x8.png)
  
