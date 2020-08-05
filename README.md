@@ -52,7 +52,12 @@ unet_learner(data, models.resnet34, metrics=metrics, wd=wd)
 
 ![Image](https://res.cloudinary.com/dge89aqpc/image/upload/v1596630819/Acc_oyvfg4.png)
 
-**Snapshot of the Learning Rate**
+**Snapshot of the Loss Function**
+- Loss Function is gradually decreasing so the Model is not Overfitting.
 
 ![Image](https://res.cloudinary.com/dge89aqpc/image/upload/v1596630918/Leaern_abn9x8.png)
+
+**Snapshot of the Learning Rate**
+
+![Image](https://res.cloudinary.com/dge89aqpc/image/upload/v1596631100/Learnin_it1vrq.png)
  
