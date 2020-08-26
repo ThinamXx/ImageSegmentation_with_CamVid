@@ -44,6 +44,7 @@ unet_learner(data, models.resnet34, metrics=metrics, wd=wd)
 ```
 
 **Image Segmentation**
+
 ![Image](https://res.cloudinary.com/dge89aqpc/image/upload/v1596630592/Seg_spjwsr.png)
 
 **Accuracy of the Model**
